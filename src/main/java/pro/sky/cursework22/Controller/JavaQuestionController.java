@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 import pro.sky.cursework22.Model.Question;
 import pro.sky.cursework22.Servise.QuestionService;
 
+import java.util.Collection;
+
 @RestController
 @RequestMapping("/java")
 public class JavaQuestionController {
@@ -28,5 +30,8 @@ private final QuestionService questionService;
 
         return questionService.removeQuestion(new Question(question,answer));
     }
-
+    @GetMapping
+    public Collection<Question> getAll() {
+        return questionService.getAllQuestion();
+    }
 }
