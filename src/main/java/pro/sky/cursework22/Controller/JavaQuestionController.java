@@ -10,7 +10,7 @@ import pro.sky.cursework22.Servise.QuestionService;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/java")
+@RequestMapping("/exam/java")
 public class JavaQuestionController {
 
 private final QuestionService questionService;
