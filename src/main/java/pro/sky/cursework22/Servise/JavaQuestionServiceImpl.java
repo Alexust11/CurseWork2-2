@@ -34,7 +34,7 @@ public class JavaQuestionServiceImpl implements QuestionService {
             throw new QuestionAlreadyAddedException("такой вопрос есть");
         }
 
-        return null;
+        return question;
     }
 
     @Override
